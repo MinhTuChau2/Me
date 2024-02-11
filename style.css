@@ -1,0 +1,426 @@
+body {
+    font-family: 'Georgia', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00FF00;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.0px;
+    justify-content: center;
+}
+
+.photo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo img {
+    max-width:100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+#photo1 { flex: 1 0 calc(70% - 10px); }
+#photo2 { flex: 1 0 calc(70% - 10px); }
+#photo3 { flex: 1 0 calc(25% - 10px); }
+#photo4 { flex: 1 0 calc(40% - 10px); }
+#photo5 { flex: 1 0 calc(40% - 10px); }
+#photo6 { flex: 1 0 calc(40% - 10px); }
+#photo7 { flex: 1 0 calc(20% - 10px); }
+#photo8 { flex: 1 0 calc(30% - 10px); }
+#photo9 { flex: 1 0 calc(50% - 10px); }
+#photo10 { flex: 1 0 calc(40% - 10px); }
+#photo11 { flex: 1 0 calc(35% - 10px); }
+
+
+.photo:hover {
+    transform: scale(1.0);
+    box-shadow: 0 0 20px rgba(0.0, 0.0, 0.0, 0.2);
+}
+
+.photo:hover img {
+    transform: scale(1.0);
+}
+
+footer {
+    background-color: #D3D3D3;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Add this style to your existing CSS */
+/* Add this style to your existing CSS */
+/* Add this style to your existing CSS */
+/* Original styles for larger screens */
+/* Original styles for larger screens */
+/* Original styles for larger screens */
+/* Original styles for larger screens */
+/* Original styles for larger screens */
+.logo {
+    width: 55px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    animation: spin 3s linear infinite, rotateSelf 5s linear infinite; /* Add rotateSelf animation */
+}
+
+.logo img {
+    width: 200%;
+    height: 200%;
+    border-radius: 70%;
+}
+
+@keyframes rotateSelf {
+    from { transform: rotateY(0deg); } /* Rotate around Y-axis */
+    to { transform: rotateY(360deg); }
+}
+
+/* Responsive styles for smaller screens (e.g., mobile phones) */
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 40px; /* Adjust the width for smaller screens */
+        height: 20px; /* Adjust the height for smaller screens */
+        top: 15px; /* Adjust the top position for smaller screens */
+        left: 20px; /* Adjust the left position for smaller screens */
+        animation: spin 3s linear infinite, rotateSelfMobile 5s linear infinite; /* Adjust animation for smaller screens */
+    }
+
+    .logo img {
+        width: 100%; /* Make the image fill its container on smaller screens */
+        height: auto;
+        border-radius: 50%; /* Adjust border-radius for a circular appearance */
+    }
+
+    @keyframes rotateSelfMobile {
+        from { transform: rotateY(0deg); } /* Rotate around Y-axis */
+        to { transform: rotateY(360deg); }
+    }
+}
+
+/* styles.css */
+
+/* styles.css */
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides:first-child {
+    display: block; /* Display the first slide */
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Common styles for both larger screens and mobile devices */
+body {
+    font-family: 'Georgia', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 15px; /* Reduce margin for smaller screens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+    display: block; /* Make each link take up the full width on smaller screens */
+}
+
+nav ul li a:hover {
+    color: #00FF00;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Add some gap between gallery items */
+    justify-content: center;
+}
+
+
+.photo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Make each photo take up the full width on smaller screens */
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.photo:hover {
+    transform: scale(1.007); /* Increase the scale on hover for better visibility */
+    box-shadow: 0 0 20px rgba(0.0, 0.0, 0.0, 0.1);
+}
+
+.photo:hover img {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #D3D3D3;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Original styles for larger screens */
+.logo {
+    width: 55px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    animation: spin 3s linear infinite, rotateSelf 5s linear infinite;
+}
+
+.logo img {
+    width: 200%;
+    height: 200%;
+    border-radius: 70%;
+}
+
+@keyframes rotateSelf {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+/* Responsive styles for smaller screens (e.g., mobile phones) */
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 40px;
+        height: 20px;
+        top: 15px;
+        left: 20px;
+        animation: spin 3s linear infinite, rotateSelfMobile 5s linear infinite;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    @keyframes rotateSelfMobile {
+        from { transform: rotateY(0deg); }
+        to { transform: rotateY(360deg); }
+    }
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    max-width: 100%; /* Ensure the slideshow takes up the full width */
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides:first-child {
+    display: block;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add this to your existing CSS or in a new style tag */
+.popup-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    visibility: hidden;
+}
+
+.popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    margin: auto;
+}
+
+.popup-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.popup-gallery.active {
+    visibility: visible;
+}
+
+#photo1 { flex: 1 0 calc(70% - 10px); }
+#photo01 { flex: 1 0 calc(20% - 10px); }
+#photo2 { flex: 1 0 calc(70% - 10px); }
+#photo02 { flex: 1 0 calc(20% - 10px); }
+#photo3 { flex: 1 0 calc(50% - 10px); }
+#photo03 { flex: 1 0 calc(20% - 10px); }
+#photo4 { flex: 1 0 calc(40% - 10px); }
+#photo04 { flex: 1 0 calc(40% - 10px); }
+#photo5 { flex: 1 0 calc(40% - 10px); }
+#photo05 { flex: 1 0 calc(40% - 10px); }
+#photo6 { flex: 1 0 calc(40% - 10px); }
+#photo7 { flex: 1 0 calc(20% - 10px); }
+#photo8 { flex: 1 0 calc(30% - 10px); }
+#photo9 { flex: 1 0 calc(50% - 10px); }
+#photo10 { flex: 1 0 calc(40% - 10px); }
+#photo11 { flex: 1 0 calc(55% - 10px); }
+
+.photo {
+    text-align: left; /* Align the content to the left within the photo div */
+    padding-left: 20px; /* Add some left padding for spacing */
+}
+
+.opinion-section {
+    margin-top: 20px; /* Add margin to separate opinion sections */
+}
+
+.book-info {
+    display: flex;
+    align-items: center;
+}
+
+.book-cover {
+    width: 80px; /* Adjust the width of the book cover image as needed */
+    height: auto;
+    margin-right: 10px; /* Add some spacing between the image and stars */
+}
+
+.star-rating {
+    display: flex;
+    font-size: 2em;
+}
+
+.star-rating label {
+    color: #f90; /* Set the color for the first four stars to yellow */
+    margin: 0 5px;
+}
+
+.star-rating label.non-yellow {
+    color: #ccc; /* Set the color for the fifth star to a different color */
+}
+
+.star-rating label:before {
+    content: '\2605'; /* Unicode character for a star */
+}
