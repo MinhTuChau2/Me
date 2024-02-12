@@ -35,7 +35,7 @@ body {
 .book {
     position: relative;
     width: 45%; /* Adjust width for smaller screens */
-    max-width: 350px; /* Add max-width to prevent the book from becoming too large */
+    max-width: 300px; /* Add max-width to prevent the book from becoming too large */
     height: 500px;
     transition: transform 0.5s;
     margin-top: 20px; /* Adjust to create space for the buttons */
