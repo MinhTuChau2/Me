@@ -34,7 +34,7 @@ body {
 /* Book */
 .book {
     position: relative;
-    width: 55%; /* Adjust width for smaller screens */
+    width: 45%; /* Adjust width for smaller screens */
     max-width: 350px; /* Add max-width to prevent the book from becoming too large */
     height: 500px;
     transition: transform 0.5s;
@@ -95,7 +95,7 @@ body {
 .prev-btn,
 .next-btn {
     position: absolute;
-    bottom: 120px; /* Adjust bottom position for smaller screens */
+    bottom: 80px; /* Adjust bottom position for smaller screens */
     font-size: 16px; /* Adjust font size for smaller screens */
     background-color: black;
     color: white;
