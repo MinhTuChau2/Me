@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 20px; /* Add padding for better mobile layout */
+    animation: skyBackground 30s linear infinite;
+}
+
+@keyframes skyBackground {
+    0% {
+        background-color: powderblue;
+    }
+    20% {
+            background-color: pink;
+        }
+    40% {
+        background-color: #FF8C00;
+    }
+    80% {
+        background-color: black;
+    }
+    100% {
+            background-color: powderblue;
+        }
+}
+
+/* Book */
+.book {
+    position: relative;
+    width: 55%; /* Adjust width for smaller screens */
+    max-width: 350px; /* Add max-width to prevent the book from becoming too large */
+    height: 500px;
+    transition: transform 0.5s;
+    margin-top: 20px; /* Adjust to create space for the buttons */
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid black;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+.prev-btn,
+.next-btn {
+    position: absolute;
+    bottom: 120px; /* Adjust bottom position for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.prev-btn {
+    left: 20%; /* Adjust left position for smaller screens */
+}
+
+.next-btn {
+    right: 20%; /* Adjust right position for smaller screens */
+}
+
+.prev-btn:focus,
+.next-btn:focus {
+    outline: none;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #333;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 12;
+}
+
+#p2 {
+    z-index: 11;
+}
+
+#p3 {
+    z-index: 10;
+}
+
+#p4 {
+    z-index: 9;
+}
+
+#p5 {
+    z-index: 8;
+}
+
+#p6 {
+    z-index: 7;
+}
+
+#p7 {
+    z-index: 6;
+}
+
+#p8 {
+    z-index: 5;
+}
+
+#p9 {
+    z-index: 4;
+}
+
+#p10 {
+    z-index: 3;
+}
+
+#p11 {
+    z-index: 2;
+}
+
+#p12 {
+    z-index: 1;
+}
+
+
+/* Grass and Flowers Animation */
+.grass-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1; /* Ensure the grass and flowers are behind other content */
+}
+
+.grass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to right, transparent 20%, #2ecc71 70%);
+    background-size: 20px 20px;
+    animation: grassAnimation 2s linear infinite;
+}
+
+.flower {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 100%;
+    animation: flowerAnimation 5s linear infinite;
+}
+
+@keyframes grassAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 20px 0;
+    }
+}
+
+@keyframes flowerAnimation {
+    0%, 50%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    75% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/* Stick Figure Animation */
+.stick-figure {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 80px;
+    animation: stickFigureAnimation 2s ease-in-out infinite;
+}
+
+.arm-left,
+.arm-right {
+    position: absolute;
+    background-color: #000;
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+    transform-origin: bottom right;
+}
+
+.arm-left {
+    top: 30px;
+    right: 0;
+    transform: rotate(45deg);
+    animation: armAnimation 2s ease-in-out infinite;
+}
+
+.arm-right {
+    top: 30px;
+    left: 0;
+    transform: rotate(-45deg);
+    animation: armAnimation 2s ease-in-out infinite;
+}
+
+/* Heart Animation */
+.heart {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateX(-50%) rotate(45deg);
+    animation: heartAnimation 1s ease-in-out infinite;
+}
+
+@keyframes stickFigureAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes armAnimation {
+    0%, 100% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes heartAnimation {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.2);
+    }
+}
+.cover-img {
+    width: 80%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+       width: 100%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Change to inline-block for better spacing */
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last li */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: green; /* Change color on hover */
+}
+
