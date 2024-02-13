@@ -36,9 +36,9 @@ body {
     position: relative;
     width: 50%; /* Adjust width for smaller screens */
     max-width: 350px; /* Add max-width to prevent the book from becoming too large */
-    height: 550px;
+    height: 500px;
     transition: transform 2s;
-    margin-top: 50px; /* Adjust to create space for the buttons */
+    margin-top: 30px; /* Adjust to create space for the buttons */
 }
 
 .paper {
