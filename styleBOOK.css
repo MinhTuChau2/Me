@@ -10,7 +10,7 @@ body {
     align-items: center;
     font-family: sans-serif;
     padding: 20px; /* Add padding for better mobile layout */
-    animation: skyBackground 30s linear infinite;
+    animation: skyBackground 35s linear infinite;
 }
 
 @keyframes skyBackground {
@@ -49,11 +49,6 @@ body {
     left: 0;
     perspective: 1000px;
 }
-@media only screen and (max-width: 600px) {
-    /*.book {
-        width: 50%;
-    }*/
-}
 
 .front,
 .back {
@@ -70,7 +65,7 @@ body {
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid black;
+    border-left: 5px solid black;
 }
 
 .back {
@@ -79,11 +74,12 @@ body {
 
 .front-content,
 .back-content {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 11px;
 }
 
 .back-content {
