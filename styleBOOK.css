@@ -70,7 +70,7 @@ body {
 
 .back {
     z-index: 0;
-     backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .front-content,
