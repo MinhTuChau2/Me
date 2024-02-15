@@ -381,11 +381,32 @@ footer {
 #photo5 { flex: 1 0 calc(40% - 10px); }
 #photo05 { flex: 1 0 calc(40% - 10px); }
 #photo6 { flex: 1 0 calc(40% - 10px); }
+#photo06 { flex: 1 0 calc(40% - 10px); }
 #photo7 { flex: 1 0 calc(20% - 10px); }
+#photo07 { flex: 1 0 calc(40% - 10px); }
 #photo8 { flex: 1 0 calc(30% - 10px); }
+#photo08 { flex: 1 0 calc(40% - 10px); }
 #photo9 { flex: 1 0 calc(50% - 10px); }
+#photo09 { flex: 1 0 calc(40% - 10px); }
 #photo10 { flex: 1 0 calc(40% - 10px); }
+#photo010 { flex: 1 0 calc(40% - 10px); }
 #photo11 { flex: 1 0 calc(55% - 10px); }
+#photo012 { flex: 1 0 calc(40% - 10px); }
+#photo013 { flex: 1 0 calc(40% - 10px); }
+#photo014 { flex: 1 0 calc(40% - 10px); }
+#photo015 { flex: 1 0 calc(40% - 10px); }
+#photo016 { flex: 1 0 calc(40% - 10px); }
+#photo017 { flex: 1 0 calc(40% - 10px); }
+#photo018 { flex: 1 0 calc(40% - 10px); }
+#photo019 { flex: 1 0 calc(40% - 10px); }
+#photo020 { flex: 1 0 calc(40% - 10px); }
+#photo021 { flex: 1 0 calc(40% - 10px); }
+#photo022 { flex: 1 0 calc(40% - 10px); }
+#photo023 { flex: 1 0 calc(40% - 10px); }
+#photo024 { flex: 1 0 calc(40% - 10px); }
+#photo025 { flex: 1 0 calc(40% - 10px); }
+#photo026 { flex: 1 0 calc(40% - 10px); }
+#photo027 { flex: 1 0 calc(40% - 10px); }
 
 .photo {
     text-align: left; /* Align the content to the left within the photo div */
