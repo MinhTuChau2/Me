@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh Tu's Outfits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fcedc7;
+        }
+
+
+        .outfit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .item {
+            width: 200px; /* Adjusted width for all items */
+            position: absolute;
+        }
+
+        .hat {
+            width: 56%;
+            top: -30px;
+            left:43px;
+            z-index: 5;
+        }
+
+        .face {
+            top: -21px;
+            width:45%;
+            z-index: 4;
+        }
+
+        .sweater-container {
+            position: relative;
+            width: 200px;
+            z-index: 3;
+        }
+
+        .sweater {
+            position: absolute;
+            top: 39px; /* Adjusted top position */
+            left: 0px;
+            width: 200px; /* Adjusted width for the sweater */
+            z-index: 3; /* Adjusted to be below everything else */
+        }
+
+        .tshirt {
+            width: 100%;
+            position: absolute;
+            top: 49px;
+            z-index: 2;
+        }
+
+
+        .pants {
+            width: 115%;
+            top: 160px; /* Adjusted top position */
+            z-index: 1;
+        }
+
+        .shoes {
+            width: 60%;
+            top: 450px;
+            z-index: 0;
+        }
+
+
+.smaller-image {
+    width: 100%;
+    top:45px;
+}
+
+.smaller-shirt {
+    width: 80%;
+    left:17px;
+    top:90px;
+
+}
+
+ .smaller-shoes {
+            width: 56%;
+            left:28px;
+            top: 421px;
+
+ }
+
+.smaller-image {
+    width: 80%;
+    left:20px;
+}
+
+.smaller-pants{
+            width: 110%;
+            left:-22px;
+            top: 193px; /* Adjusted top position */
+
+}
+.bigger-pants{
+            width: 85%;
+            left:22px;
+            top: 202px; /* Adjusted top position */
+
+}
+
+.bigger-pants2{
+            width: 80%;
+            left:17px;
+            top: 203px; /* Adjusted top position */
+
+}
+
+.bigger-pants3{
+            width: 85%;
+            left:22px;
+            top: 200px; /* Adjusted top position */
+
+}
+
+.bigger-pants4{
+            width: 75%;
+            left:25px;
+            top: 200px; /* Adjusted top position */
+
+}
+
+.bigger-pants5{
+            width: 60%;
+            left:33px;
+            top: 202px; /* Adjusted top position */
+
+}
+
+.bigger-pants6{
+            width: 65%;
+            left:35px;
+            top: 207px; /* Adjusted top position */
+
+}
+.smaller-tank{
+            width: 100%;
+            position: absolute;
+            top: 18px;
+}
+.smaller-nav{
+            position: absolute;
+            top: 0px; /* Adjusted top position */
+            left: -15px;
+            width: 110%;
+}
+.smaller-gg{
+            width: 120%;
+            position: absolute;
+            left: -22px;
+            top: -10px;
+}
+
+.smaller-co{
+            position: absolute;
+            top: -7px; /* Adjusted top position */
+            left: -9px;
+            width: 110%;
+}
+
+.smaller-crop{
+            width: 115%;
+            position: absolute;
+            left: -11px;
+            top: 15px;
+}
+
+.smaller-grey{
+            width: 100%;
+            position: absolute;
+            left: -5px;
+            top: 25px;
+}
+
+
+button {
+    background-color: #d1b045;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 400px; /* You can adjust this value as needed */
+    padding: 10px 20px; /* Add padding for better button appearance */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+button:hover {
+    background-color: #ffdf78;
+}
+
+.belt {
+    width: 105px; /* Adjust width as needed */
+    left: 42px;
+    top: 211px; /* Adjust top position */
+    z-index: 2; /* Adjust z-index as needed */
+}
+
+    </style>
+</head>
+
+<body>
+
+
+<div class="outfit">
+    <img src="hat.jpg" alt="Hat" class="item hat">
+    <img src="face.jpg" alt="Face" class="item face">
+    <div class="sweater-container">
+        <img src="" alt="Sweater" class="item sweater"> <!-- Removed inline style for top position -->
+        <img src="" alt="T-shirt" class="item tshirt"> <!-- Added class to make it smaller -->
+    </div>
+    <img src="" alt="Belt" class="item belt">
+    <img src="" alt="Pants" class="item pants">
+    <img src="" alt="Shoes" class="item shoes">
+</div>
+
+
+<script>
+    // Array of image filenames for each clothing item
+   var hats = ["head.png", "nothing.png"]; // Add your hat image filenames here
+   var faces = ["un.png", "deux.png", "trois.png"];
+   var sweaters = ["cozyblack-Photoroom.png-Photoroom.png","turleblue-Photoroom.png-Photoroom.png", "nothing.png", "turtleuni.png","redd.png"];
+   var tshirts = ["greenblum-Photoroom.png-Photoroom.png","blacktank-Photoroom.png-Photoroom.png","greytank-Photoroom.png-Photoroom.png","blackcrop-Photoroom.png-Photoroom.png","TRANSP.png","tanktop.png", "Blackt-removebg-preview.png"];
+   var pants = ["strip-Photoroom.png-Photoroom.png","rip-Photoroom.png-Photoroom.png","nikejog-Photoroom.png-Photoroom.png","brownbot-Photoroom.png-Photoroom.png","bluejob-Photoroom.png-Photoroom.png","blackjog-Photoroom.png-Photoroom.png","dickies.png", "wrangler.png"];
+   var belts = ["nothing.png","belt-Photoroom.png-Photoroom.png"]; // Add your belt image filenames here
+   var shoes = ["gianno.png","clak.png","burgundy-adrian-leather-tassel-loafers-Photoroom.png-Photoroom.png"];
+
+   // Function to set random image source for each clothing item
+   function setRandomOutfit() {
+       var hatIndex = Math.floor(Math.random() * hats.length);
+       var faceIndex = Math.floor(Math.random() * faces.length);
+       var sweaterIndex = Math.floor(Math.random() * sweaters.length);
+       var tshirtIndex = Math.floor(Math.random() * tshirts.length);
+       var pantsIndex = Math.floor(Math.random() * pants.length);
+       var shoesIndex = Math.floor(Math.random() * shoes.length);
+       var beltIndex = Math.floor(Math.random() * belts.length);
+
+       var beltImg = document.querySelector('.belt');
+       beltImg.src = belts[beltIndex];
+
+       var hatImg = document.querySelector('.hat');
+       hatImg.src = hats[hatIndex];
+
+       var faceImg = document.querySelector('.face');
+       faceImg.src = faces[faceIndex];
+
+       var sweaterImg = document.querySelector('.sweater');
+       sweaterImg.src = sweaters[sweaterIndex];
+
+       var tshirtImg = document.querySelector('.tshirt');
+       tshirtImg.src = tshirts[tshirtIndex];
+
+       var pantsImg = document.querySelector('.pants');
+       pantsImg.src = pants[pantsIndex];
+
+       var shoesImg = document.querySelector('.shoes');
+       shoesImg.src = shoes[shoesIndex];
+
+       // Apply smaller image class to specific images
+       if (tshirts[tshirtIndex] === "tanktop.png") {
+        tshirtImg.classList.add('smaller-image');
+    } else {
+        tshirtImg.classList.remove('smaller-image'); // Remove the class if it's not the specific image
+    }
+
+     if (tshirts[tshirtIndex] === "blacktank-Photoroom.png-Photoroom.png") {
+        tshirtImg.classList.add('smaller-tank');
+    } else {
+        tshirtImg.classList.remove('smaller-tank'); // Remove the class if it's not the specific image
+    }
+
+     if (tshirts[tshirtIndex] === "blackcrop-Photoroom.png-Photoroom.png") {
+        tshirtImg.classList.add('smaller-crop');
+    } else {
+        tshirtImg.classList.remove('smaller-crop'); // Remove the class if it's not the specific image
+    }
+
+     if (tshirts[tshirtIndex] === "greytank-Photoroom.png-Photoroom.png") {
+        tshirtImg.classList.add('smaller-grey');
+    } else {
+        tshirtImg.classList.remove('smaller-grey'); // Remove the class if it's not the specific image
+    }
+
+
+    if (tshirts[tshirtIndex] === "greenblum-Photoroom.png-Photoroom.png") {
+        tshirtImg.classList.add('smaller-gg');
+    } else {
+        tshirtImg.classList.remove('smaller-gg'); // Remove the class if it's not the specific image
+    }
+
+     if (sweaters[sweaterIndex] === "turleblue-Photoroom.png-Photoroom.png") {
+        sweaterImg.classList.add('smaller-nav');
+    } else {
+        sweaterImg.classList.remove('smaller-nav'); // Remove the class if it's not the specific image
+    }
+
+    if (sweaters[sweaterIndex] === "cozyblack-Photoroom.png-Photoroom.png") {
+        sweaterImg.classList.add('smaller-co');
+    } else {
+        sweaterImg.classList.remove('smaller-co'); // Remove the class if it's not the specific image
+    }
+
+     if (shoes[shoesIndex] === "clak.png") {
+        shoesImg.classList.add('smaller-shoes');
+    } else {
+        shoesImg.classList.remove('smaller-shoes'); // Remove the class if it's not the specific image
+    }
+
+      if (pants[pantsIndex] === "wrangler.png") {
+        pantsImg.classList.add('smaller-pants');
+    } else {
+        pantsImg.classList.remove('smaller-pants'); // Remove the class if it's not the specific image
+    }
+
+      if (pants[pantsIndex] === "bluejob-Photoroom.png-Photoroom.png") {
+        pantsImg.classList.add('bigger-pants');
+    } else {
+        pantsImg.classList.remove('bigger-pants'); // Remove the class if it's not the specific image
+    }
+
+    if (pants[pantsIndex] === "blackjog-Photoroom.png-Photoroom.png") {
+        pantsImg.classList.add('bigger-pants2');
+    } else {
+        pantsImg.classList.remove('bigger-pants2'); // Remove the class if it's not the specific image
+    }
+
+     if (pants[pantsIndex] === "brownbot-Photoroom.png-Photoroom.png") {
+        pantsImg.classList.add('bigger-pants3');
+    } else {
+        pantsImg.classList.remove('bigger-pants3'); // Remove the class if it's not the specific image
+    }
+
+     if (pants[pantsIndex] === "nikejog-Photoroom.png-Photoroom.png") {
+        pantsImg.classList.add('bigger-pants4');
+    } else {
+        pantsImg.classList.remove('bigger-pants4'); // Remove the class if it's not the specific image
+    }
+
+    if (pants[pantsIndex] === "rip-Photoroom.png-Photoroom.png") {
+        pantsImg.classList.add('bigger-pants5');
+    } else {
+        pantsImg.classList.remove('bigger-pants5'); // Remove the class if it's not the specific image
+    }
+
+    if (pants[pantsIndex] === "strip-Photoroom.png-Photoroom.png") {
+        pantsImg.classList.add('bigger-pants6');
+    } else {
+        pantsImg.classList.remove('bigger-pants6'); // Remove the class if it's not the specific image
+    }
+
+}
+
+   // Call the function to set random outfit when the page loads
+   window.onload = setRandomOutfit;
+     document.querySelectorAll('.item').forEach(function(item) {
+       item.addEventListener('click', setRandomOutfit);
+   });
+</script>
+</body>
+</html>
